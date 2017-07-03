@@ -134,7 +134,7 @@
                                 <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -164,7 +164,7 @@
                             <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
                         </div>
                     </div>
-                    
+
                     <hr class="small">
                     <!-- Contact form begins -->
                     <div class="row col-md-6 col-md-offset-3">
@@ -182,10 +182,10 @@
                                 <div class="col-sm-10">
                                     <input type="email" name="email" class="form-control" id="name-input">
                                 </div>
-                            </div>  
+                            </div>
 
                             <div class="form-group">
-                                <label for="body">I'd love to hear your thoughts!</label>                 
+                                <label for="body">I'd love to hear your thoughts!</label>
                                 <textarea class="form-control" name="body" rows="3"></textarea>
                             </div>
 
@@ -279,14 +279,28 @@
                 statusbar: 0,
                 view: "FitV"
             }
-            
-        };        
+
+        };
 
         PDFObject.embed("resume/SRAMResume.pdf", ".resume-container", options);
     </script>
 
     <!-- Custom Theme JavaScript -->
     <script>
+    // $.ajax({
+    //   url: 'https://www.googleapis.com/books/v1/volumes?q=wool',
+    //   data: {},
+    //   success: function(response) {
+    //     var items = response.items;
+    //     var firstItem = items[0];
+    //     var volumeInfo = firstItem.volumeInfo;
+    //     var description = volumeInfo.description;
+    //
+    //     $('.text-vertical-center h3').text(description);
+    //   },
+    //   dataType: 'json'
+    // });
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -357,6 +371,17 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-102000901-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
 
 </body>
